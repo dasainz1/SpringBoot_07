@@ -11,7 +11,7 @@ import javax.validation.Valid;
 @Controller
 public class HomeController {
     @GetMapping("/tvform")
-    public String loadTVForm (Model model) {
+    public String loadTvForm (Model model) {
         model.addAttribute("tvshow", new Tvshow());
         return "tvform";
     }
